@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a751fdadce06bf32e23bd53515ca93ba",
+    "content-hash": "4759fe6bb044ad15b6fcc76a6a8c3f20",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1265,6 +1265,42 @@
                 "source": "https://github.com/Masterminds/html5-php/tree/2.9.0"
             },
             "time": "2024-03-31T07:05:07+00:00"
+        },
+        {
+            "name": "ngs-it/template",
+            "version": "13.4",
+            "dist": {
+                "type": "path",
+                "url": "./packages/template",
+                "reference": "05582437ce85f68aa11f6020e8d781a57a986a4e"
+            },
+            "require": {
+                "typo3/cms-core": "^13.4",
+                "typo3/cms-fluid-styled-content": "^13.4",
+                "typo3/cms-rte-ckeditor": "^13.4"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "template"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NgsIt\\Template\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "contains main assets to build website",
+            "homepage": "https://www.ngs-it.de",
+            "keywords": [
+                "TYPO3 CMS"
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "nikic/php-parser",

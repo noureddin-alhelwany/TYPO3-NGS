@@ -1,5 +1,6 @@
 base: 'https://typo3-ngs.ddev.site/'
-errorHandling: {  }
+dependencies:
+  - ngs-it/template
 languages:
   -
     title: English
@@ -10,4 +11,4 @@ languages:
     navigationTitle: English
     flag: us
 rootPageId: 1
-routes: {  }
+websiteTitle: ''

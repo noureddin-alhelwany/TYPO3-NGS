@@ -1,0 +1,24 @@
+{
+    "name": "ngs-it/template",
+    "type": "typo3-cms-extension",
+    "description": "contains main assets to build website",
+    "homepage": "https://www.ngs-it.de",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "version": "13.4",
+    "require": {
+        "typo3/cms-core": "^13.4",
+        "typo3/cms-rte-ckeditor": "^13.4",
+        "typo3/cms-fluid-styled-content": "^13.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "NgsIt\\Template\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "template"
+        }
+    }
+}
