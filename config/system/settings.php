@@ -102,7 +102,7 @@ return [
         ],
         'sitename' => 'NGS',
         'systemMaintainers' => [
-            1,
+            1, 2
         ],
     ],
 ];
