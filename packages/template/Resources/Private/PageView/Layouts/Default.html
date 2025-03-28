@@ -7,7 +7,7 @@
 <ul>
     <f:for each="{mainnavigation}" as="mainnavigationItem">
         <li class="{f:if(condition: mainnavigationItem.active, then:'active')}">
-            <a href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}">
+            <a href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}" class="text-3xl text-white">
                 {mainnavigationItem.title}
             </a>
             <f:if condition="{mainnavigationItem.children}">
