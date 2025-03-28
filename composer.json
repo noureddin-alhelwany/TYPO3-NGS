@@ -15,6 +15,7 @@
 	},
 	"require": {
 		"ngs-it/template": "^13.4",
+		"praetorius/vite-asset-collector": "^1.14",
 		"typo3/cms-backend": "^13.4",
 		"typo3/cms-belog": "^13.4",
 		"typo3/cms-beuser": "^13.4",

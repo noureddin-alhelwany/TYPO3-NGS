@@ -1,3 +1,5 @@
+
+
 <ul>
     <f:for each="{mainnavigation}" as="mainnavigationItem">
         <li class="{f:if(condition: mainnavigationItem.active, then:'active')}">
@@ -19,3 +21,10 @@
     </f:for>
 </ul>
 <f:render section="Main" />
+
+<html
+    data-namespace-typo3-fluid="true"
+    xmlns:vite="http://typo3.org/ns/Praetorius/ViteAssetCollector/ViewHelpers"
+>
+<vite:asset entry="EXT:template/Resources/Private/Styles.entry.css" />
+<vite:asset entry="EXT:template/Resources/Private/Main.entry.js" />
