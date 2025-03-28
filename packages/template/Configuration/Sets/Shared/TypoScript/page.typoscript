@@ -43,7 +43,7 @@ page {
     }
 
     includeCSS {
-        template_layout = EXT:template/Resources/Public/Css/layout.css
+        template_layout = 
     }
 
     includeJSLibs {

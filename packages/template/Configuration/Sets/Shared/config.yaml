@@ -1,5 +1,5 @@
-name: ngs-it/template
-label: 'template'
+name: ngs/shared
+label: 'shared'
 dependencies:
   - typo3/fluid-styled-content
   - typo3/fluid-styled-content-css

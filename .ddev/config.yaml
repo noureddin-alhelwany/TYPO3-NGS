@@ -5,7 +5,8 @@ php_version: "8.3"
 webserver_type: nginx-fpm
 xdebug_enabled: false
 additional_hostnames: 
-    - test
+    - ngs-web
+    - ask-vwl
 additional_fqdns: []
 database:
     type: mariadb

@@ -1,0 +1,30 @@
+##############
+#### PAGE ####
+##############
+page = PAGE
+page {
+    includeCSSLibs {
+
+    }
+
+    includeCSS {
+        template_layout = EXT:template/Resources/Public/Css/NGSWeb/main.css
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+        template_scripts = EXT:template/Resources/Public/JavaScript/main.js
+    }
+
+}

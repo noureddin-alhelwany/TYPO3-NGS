@@ -1,6 +1,6 @@
-base: 'https://typo3-ngs.ddev.site/'
+base: 'https://ngs-web.ddev.site/'
 dependencies:
-  - ngs-it/template
+  - ngs-web/template
 languages:
   -
     title: English

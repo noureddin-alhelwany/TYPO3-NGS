@@ -1,0 +1,14 @@
+base: 'https://ask-vwl.ddev.site/'
+dependencies:
+  - ask-vwl/template
+languages:
+  -
+    title: English
+    enabled: true
+    languageId: 0
+    base: /
+    locale: en_US.UTF-8
+    navigationTitle: English
+    flag: us
+rootPageId: 5
+websiteTitle: ''

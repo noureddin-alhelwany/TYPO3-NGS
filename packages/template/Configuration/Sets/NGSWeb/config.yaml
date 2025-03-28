@@ -1,0 +1,4 @@
+name: ngs-web/template
+label: 'NGS-Web'
+dependencies:
+  - ngs/shared

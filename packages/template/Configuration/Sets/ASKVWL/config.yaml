@@ -1,0 +1,4 @@
+name: ask-vwl/template
+label: 'ASK-VWL'
+dependencies:
+  - ngs/shared
