@@ -1,4 +1,3 @@
 [
-    "../Resources/Private/Styles.entry.css",
-    "../Resources/Private/Main.entry.js"
+    "../Resources/Private/assets/**/*"
 ]

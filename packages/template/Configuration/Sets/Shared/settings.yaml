@@ -1,3 +1,4 @@
+assetsDir: 'shared'
 styles:
   templates:
     layoutRootPath: 'EXT:template/Resources/Private/ContentElements/Layouts/'
@@ -26,3 +27,4 @@ config:
   prefixLocalAnchors: 'all'
   headerComment: 'build by get.typo3.org/sitepackage'
   sendCacheHeaders: '1'
+

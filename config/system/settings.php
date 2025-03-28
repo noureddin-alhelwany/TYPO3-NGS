@@ -2,7 +2,6 @@
 return [
     'BE' => [
         'debug' => false,
-        // password = test
         'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=1$TkNFaExvOUgxYi5uOXhJLg$rlnfD6NgPX8dDbJYROZecmS7y2cbcDM3AW2s7Ba6I1Y',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
@@ -30,6 +29,11 @@ return [
         'extensionmanager' => [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
+        ],
+        'vite_asset_collector' => [
+            'defaultManifest' => '_assets/vite/.vite/manifest.json',
+            'devServerUri' => 'auto',
+            'useDevServer' => 'auto',
         ],
     ],
     'FE' => [
@@ -102,7 +106,8 @@ return [
         ],
         'sitename' => 'NGS',
         'systemMaintainers' => [
-            1, 2
+            1,
+            2,
         ],
     ],
 ];

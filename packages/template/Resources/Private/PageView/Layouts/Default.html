@@ -1,4 +1,8 @@
 
+<html
+    data-namespace-typo3-fluid="true"
+    xmlns:vite="http://typo3.org/ns/Praetorius/ViteAssetCollector/ViewHelpers"
+>
 
 <ul>
     <f:for each="{mainnavigation}" as="mainnavigationItem">
@@ -22,9 +26,5 @@
 </ul>
 <f:render section="Main" />
 
-<html
-    data-namespace-typo3-fluid="true"
-    xmlns:vite="http://typo3.org/ns/Praetorius/ViteAssetCollector/ViewHelpers"
->
-<vite:asset entry="EXT:template/Resources/Private/Styles.entry.css" />
-<vite:asset entry="EXT:template/Resources/Private/Main.entry.js" />
+<vite:asset entry="EXT:template/Resources/Private/assets/{settings.assetsDir}/Styles.entry.css" />
+<vite:asset entry="EXT:template/Resources/Private/assets/{settings.assetsDir}/Main.entry.js" />
