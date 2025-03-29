@@ -43,7 +43,7 @@ page {
     }
 
     includeCSS {
-        template_layout = 
+        template_layout =
     }
 
     includeJSLibs {
@@ -59,6 +59,6 @@ page {
     }
 
     includeJSFooter {
-        template_scripts = EXT:template/Resources/Public/JavaScript/main.js
+        template_scripts =
     }
 }
