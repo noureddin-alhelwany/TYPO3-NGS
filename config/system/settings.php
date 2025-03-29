@@ -104,7 +104,7 @@ return [
         'features' => [
             'frontend.cache.autoTagging' => true,
         ],
-        'sitename' => 'NGS',
+        'sitename' => 'NGS-Website-Maker',
         'systemMaintainers' => [
             1,
             2,
