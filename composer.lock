@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fb76042da2738acb0cbe090e94b4657d",
+    "content-hash": "f2315ef2f274586d4f3dcd9ca8719868",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -5500,69 +5500,6 @@
             "time": "2025-03-18T14:13:14+00:00"
         },
         {
-            "name": "typo3/cms-dashboard",
-            "version": "v13.4.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TYPO3-CMS/dashboard.git",
-                "reference": "2e51edbdedad8a5a8394e46a95d405ecf22c98b0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/dashboard/zipball/2e51edbdedad8a5a8394e46a95d405ecf22c98b0",
-                "reference": "2e51edbdedad8a5a8394e46a95d405ecf22c98b0",
-                "shasum": ""
-            },
-            "require": {
-                "typo3/cms-backend": "13.4.8",
-                "typo3/cms-core": "13.4.8",
-                "typo3/cms-extbase": "13.4.8",
-                "typo3/cms-fluid": "13.4.8",
-                "typo3/cms-frontend": "13.4.8"
-            },
-            "conflict": {
-                "typo3/cms": "*"
-            },
-            "type": "typo3-cms-framework",
-            "extra": {
-                "typo3/cms": {
-                    "Package": {
-                        "serviceProvider": "TYPO3\\CMS\\Dashboard\\ServiceProvider",
-                        "partOfFactoryDefault": true
-                    },
-                    "extension-key": "dashboard"
-                },
-                "branch-alias": {
-                    "dev-main": "13.4.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Dashboard\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "TYPO3 CMS Dashboard - TYPO3 backend module used to configure and create backend widgets.",
-            "homepage": "https://typo3.org",
-            "support": {
-                "chat": "https://typo3.org/help",
-                "docs": "https://docs.typo3.org/c/typo3/cms-dashboard/main/en-us/",
-                "issues": "https://forge.typo3.org",
-                "source": "https://github.com/typo3/typo3"
-            },
-            "time": "2025-03-18T14:13:14+00:00"
-        },
-        {
             "name": "typo3/cms-extbase",
             "version": "v13.4.8",
             "source": {
@@ -6264,125 +6201,6 @@
             "time": "2025-03-18T14:13:14+00:00"
         },
         {
-            "name": "typo3/cms-reactions",
-            "version": "v13.4.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TYPO3-CMS/reactions.git",
-                "reference": "338f0e485027e3b9f280551f1d30995104493f38"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/reactions/zipball/338f0e485027e3b9f280551f1d30995104493f38",
-                "reference": "338f0e485027e3b9f280551f1d30995104493f38",
-                "shasum": ""
-            },
-            "require": {
-                "typo3/cms-core": "13.4.8"
-            },
-            "conflict": {
-                "typo3/cms": "*"
-            },
-            "suggest": {
-                "typo3/cms-lowlevel": "To display registered reactions in the configuration module"
-            },
-            "type": "typo3-cms-framework",
-            "extra": {
-                "typo3/cms": {
-                    "extension-key": "reactions"
-                },
-                "branch-alias": {
-                    "dev-main": "13.4.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Reactions\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "TYPO3 CMS Reactions - Handle incoming Webhooks for TYPO3",
-            "homepage": "https://typo3.org",
-            "support": {
-                "chat": "https://typo3.org/help",
-                "docs": "https://docs.typo3.org/c/typo3/cms-reactions/main/en-us/",
-                "issues": "https://forge.typo3.org",
-                "source": "https://github.com/typo3/typo3"
-            },
-            "time": "2025-03-18T14:13:14+00:00"
-        },
-        {
-            "name": "typo3/cms-recycler",
-            "version": "v13.4.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TYPO3-CMS/recycler.git",
-                "reference": "a1f5d02d85c8ea0b625467bb4fa6f5d4fccf3e22"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/recycler/zipball/a1f5d02d85c8ea0b625467bb4fa6f5d4fccf3e22",
-                "reference": "a1f5d02d85c8ea0b625467bb4fa6f5d4fccf3e22",
-                "shasum": ""
-            },
-            "require": {
-                "typo3/cms-core": "13.4.8"
-            },
-            "conflict": {
-                "typo3/cms": "*"
-            },
-            "suggest": {
-                "typo3/cms-scheduler": "Remove deleted records after given time"
-            },
-            "type": "typo3-cms-framework",
-            "extra": {
-                "typo3/cms": {
-                    "Package": {
-                        "partOfFactoryDefault": true
-                    },
-                    "extension-key": "recycler"
-                },
-                "branch-alias": {
-                    "dev-main": "13.4.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Recycler\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "TYPO3 CMS Recycler - Restore deleted records or remove them from the database permanently.",
-            "homepage": "https://typo3.org",
-            "support": {
-                "chat": "https://typo3.org/help",
-                "docs": "https://docs.typo3.org/c/typo3/cms-recycler/main/en-us/",
-                "issues": "https://forge.typo3.org",
-                "source": "https://github.com/typo3/typo3"
-            },
-            "time": "2025-03-18T14:13:14+00:00"
-        },
-        {
             "name": "typo3/cms-rte-ckeditor",
             "version": "v13.4.8",
             "source": {
@@ -6736,65 +6554,6 @@
             "support": {
                 "chat": "https://typo3.org/help",
                 "docs": "https://docs.typo3.org",
-                "issues": "https://forge.typo3.org",
-                "source": "https://github.com/typo3/typo3"
-            },
-            "time": "2025-03-18T14:13:14+00:00"
-        },
-        {
-            "name": "typo3/cms-webhooks",
-            "version": "v13.4.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TYPO3-CMS/webhooks.git",
-                "reference": "fe0e2681d3b777196225eebf0a53b03297e90ecf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/webhooks/zipball/fe0e2681d3b777196225eebf0a53b03297e90ecf",
-                "reference": "fe0e2681d3b777196225eebf0a53b03297e90ecf",
-                "shasum": ""
-            },
-            "require": {
-                "symfony/uid": "^7.1.4",
-                "typo3/cms-core": "13.4.8"
-            },
-            "conflict": {
-                "typo3/cms": "*"
-            },
-            "suggest": {
-                "typo3/cms-lowlevel": "To display registered webhooks in the configuration module"
-            },
-            "type": "typo3-cms-framework",
-            "extra": {
-                "typo3/cms": {
-                    "extension-key": "webhooks"
-                },
-                "branch-alias": {
-                    "dev-main": "13.4.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Webhooks\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "TYPO3 CMS Webhooks - Handle outgoing Webhooks for TYPO3",
-            "homepage": "https://typo3.org",
-            "support": {
-                "chat": "https://typo3.org/help",
-                "docs": "https://docs.typo3.org/c/typo3/cms-webhooks/main/en-us/",
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
