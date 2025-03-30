@@ -1,0 +1,6 @@
+name: ngs/image-card
+fields:
+  - identifier: header
+    useExistingField: true
+  - identifier: bodytext
+    useExistingField: true

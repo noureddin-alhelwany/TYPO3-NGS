@@ -15,6 +15,7 @@
 	},
 	"require": {
 		"buepro/typo3-container-elements": "^6.0",
+		"friendsoftypo3/content-blocks": "^1.1",
 		"ngs-it/template": "^13.4",
 		"praetorius/vite-asset-collector": "^1.14",
 		"typo3/cms-backend": "^13.4",
