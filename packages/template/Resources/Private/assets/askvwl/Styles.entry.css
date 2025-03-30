@@ -1,21 +1,26 @@
 @import "tailwindcss";
+
 @import "bootstrap/dist/css/bootstrap-grid.css";
 
 @theme {
-    --color-primary: #ff9c08;
-    --color-on-primary: #fff4e1;
+  --color-primary: #ff9c08;
+  --color-on-primary: #fff4e1;
+  
+  --color-secondary: #086bff;
+  --color-on-secondary: #e2f2ff;
+  
+  --color-surface: white;
+  
+  --color-error: var(--color-red-400);
+  --color-on-error: white;
+  
+  --color-warning: var(--color-orange-400);
+  --color-on-warning: white;
+  
+  --color-info: var(--color-blue-400);
+  --color-on-info: white;
+}
 
-    --color-secondary: #086bff;
-    --color-on-secondary: #e2f2ff;
-
-    --color-surface: white;
-
-    --color-error: var(--color-red-400);
-    --color-on-error: white;
-
-    --color-warning: var(--color-orange-400);
-    --color-on-warning: white;
-
-    --color-info: var(--color-blue-400);
-    --color-on-info: white;
+.line {
+  @apply border-primary rounded-lg border-4;
 }

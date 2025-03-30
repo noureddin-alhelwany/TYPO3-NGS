@@ -1,11 +1,13 @@
 import { createApp } from 'vue/dist/vue.esm-bundler';
 
+import StyledButton from "../shared/Components/StyledButton.vue"
 createApp({
-    data() {
-      return {
-        message: 'Hello Vue!',
-        count: 0
-      }
+  data() {
+    return {
     }
-  }).mount('#app')
+  },
+  components: {
+    StyledButton
+  }
+}).mount('#app')
 
