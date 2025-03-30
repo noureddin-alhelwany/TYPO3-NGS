@@ -4,8 +4,70 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f2315ef2f274586d4f3dcd9ca8719868",
+    "content-hash": "8d59a1038c7c6798a52efa11798896dc",
     "packages": [
+        {
+            "name": "b13/container",
+            "version": "3.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/b13/container.git",
+                "reference": "bb8834b539bdd8135e3cdfeee7db89012da75775"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/b13/container/zipball/bb8834b539bdd8135e3cdfeee7db89012da75775",
+                "reference": "bb8834b539bdd8135e3cdfeee7db89012da75775",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-backend": "^11.5 || ^12.4 || ^13.4"
+            },
+            "replace": {
+                "typo3-ter/container": "self.version"
+            },
+            "require-dev": {
+                "b13/container-example": "dev-master",
+                "codeception/codeception": "^4.1 || ^5.1",
+                "codeception/module-asserts": "^1.0 || ^3.0",
+                "codeception/module-db": "^1.0 || ^3.1",
+                "codeception/module-webdriver": "^1.0 || ^4.0",
+                "friendsofphp/php-cs-fixer": "^3.51",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "9.6 || ^10.5",
+                "typo3/cms-fluid-styled-content": "^11.5 || ^12.4 || ^13.4",
+                "typo3/cms-info": "^11.5 || ^12.4 || ^13.4",
+                "typo3/cms-install": "^11.5 || ^12.4 || ^13.4",
+                "typo3/cms-workspaces": "^11.5 || ^12.4 || ^13.4",
+                "typo3/coding-standards": "^0.5.5",
+                "typo3/testing-framework": "^7.1.1 || ^8.2.7"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "app-dir": ".Build",
+                    "web-dir": ".Build/Web",
+                    "extension-key": "container",
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "B13\\Container\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Create Custom Container Content Elements for TYPO3",
+            "homepage": "https://b13.com",
+            "support": {
+                "issues": "https://github.com/b13/container/issues",
+                "source": "https://github.com/b13/container/tree/3.1.5"
+            },
+            "time": "2025-03-11T11:17:10+00:00"
+        },
         {
             "name": "bacon/bacon-qr-code",
             "version": "v3.0.1",
@@ -59,6 +121,166 @@
                 "source": "https://github.com/Bacon/BaconQrCode/tree/v3.0.1"
             },
             "time": "2024-10-01T13:55:55+00:00"
+        },
+        {
+            "name": "buepro/typo3-container-elements",
+            "version": "v6.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/buepro/typo3-container_elements.git",
+                "reference": "22bc4de2eb12270f935d642bc97c19327ac8e230"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/buepro/typo3-container_elements/zipball/22bc4de2eb12270f935d642bc97c19327ac8e230",
+                "reference": "22bc4de2eb12270f935d642bc97c19327ac8e230",
+                "shasum": ""
+            },
+            "require": {
+                "b13/container": "^3.0.0",
+                "buepro/typo3-pvh": "^3.1.0",
+                "typo3/cms-core": "^12.4.22 || ^13.4"
+            },
+            "conflict": {
+                "buepro/typo3-pizpalue": "<17"
+            },
+            "replace": {
+                "typo3-ter/container-elements": "self.version"
+            },
+            "require-dev": {
+                "bk2k/bootstrap-package": "^15.0.0",
+                "buepro/typo3-pizpalue": "^17@dev",
+                "ergebnis/composer-normalize": "^2.43.0",
+                "friendsofphp/php-cs-fixer": "^3.62.0",
+                "friendsoftypo3/phpstan-typo3": "^0.9.0",
+                "overtrue/phplint": "^9.4.1",
+                "phpspec/prophecy-phpunit": "^2.2.0",
+                "phpstan/phpstan": "^1.11.10",
+                "phpstan/phpstan-deprecation-rules": "^1.2.0",
+                "phpstan/phpstan-phpunit": "^1.4.0",
+                "phpstan/phpstan-strict-rules": "^1.6.0",
+                "typo3/cms-base-distribution": "^12.4 || ^13.4",
+                "typo3/cms-core": "^12.4",
+                "typo3/cms-lowlevel": "^12.4 || ^13.4",
+                "typo3/cms-recycler": "^12.4 || ^13.4"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "web-dir": ".build/public",
+                    "extension-key": "container_elements"
+                },
+                "branch-alias": {
+                    "dev-main": "6.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Buepro\\ContainerElements\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Büchler",
+                    "email": "rb@buechler.pro",
+                    "homepage": "https://www.buechler.pro/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "TYPO3 extension providing content elements powered by container and bootstrap. Available elements: container, columns, tabs, accordion, tile unit, card, randomizer and slider.",
+            "homepage": "https://extensions.typo3.org/extension/container_elements",
+            "keywords": [
+                "TYPO3 CMS",
+                "container",
+                "element",
+                "grid",
+                "pizpalue",
+                "structure"
+            ],
+            "support": {
+                "docs": "https://docs.typo3.org/p/buepro/typo3-container-elements/main/en-us/",
+                "issues": "https://github.com/buepro/typo3-container_elements/issues",
+                "source": "https://github.com/buepro/typo3-container_elements"
+            },
+            "time": "2024-12-06T19:41:44+00:00"
+        },
+        {
+            "name": "buepro/typo3-pvh",
+            "version": "v3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/buepro/typo3-pvh.git",
+                "reference": "53040dc4ed475f7357954816c9b5b2e36a6324d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/buepro/typo3-pvh/zipball/53040dc4ed475f7357954816c9b5b2e36a6324d5",
+                "reference": "53040dc4ed475f7357954816c9b5b2e36a6324d5",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "^12.4.22 || ^13.4"
+            },
+            "require-dev": {
+                "ergebnis/composer-normalize": "^2.43.0",
+                "friendsofphp/php-cs-fixer": "^3.0.0",
+                "friendsoftypo3/phpstan-typo3": "^0.9.0",
+                "overtrue/phplint": "^9.0.0",
+                "phpspec/prophecy-phpunit": "^2.0",
+                "phpstan/phpstan": "^1.8.5",
+                "phpstan/phpstan-deprecation-rules": "^1.0.0",
+                "phpstan/phpstan-phpunit": "^1.1.1",
+                "phpstan/phpstan-strict-rules": "^1.4.3",
+                "roave/security-advisories": "dev-latest",
+                "typo3/cms-base-distribution": "^12.4 || ^13.4",
+                "typo3/cms-core": "^13.4",
+                "typo3/cms-lowlevel": "^12.4 || ^13.4",
+                "typo3/cms-recycler": "^12.4 || ^13.4",
+                "typo3/testing-framework": "^8.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "web-dir": ".build/public",
+                    "extension-key": "pvh"
+                },
+                "branch-alias": {
+                    "dev-main": "3.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Buepro\\Pvh\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Büchler",
+                    "email": "rb@buechler.pro",
+                    "homepage": "https://www.buechler.pro/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A collection of view helpers used by pizpalue. Contains copies from vhs view helpers by Claus Due.",
+            "homepage": "https://github.com/buepro/typo3-pvh",
+            "keywords": [
+                "TYPO3 CMS",
+                "pizpalue",
+                "view helper"
+            ],
+            "support": {
+                "issues": "https://github.com/buepro/typo3-pvh/issues",
+                "source": "https://github.com/buepro/typo3-pvh/tree/v3.1.0"
+            },
+            "time": "2024-12-06T14:43:48+00:00"
         },
         {
             "name": "christian-riesen/base32",
@@ -6191,6 +6413,64 @@
                 }
             ],
             "description": "TYPO3 CMS Install Tool - The Install Tool is used for installation, upgrade, system administration and setup tasks.",
+            "homepage": "https://typo3.org",
+            "support": {
+                "chat": "https://typo3.org/help",
+                "docs": "https://docs.typo3.org",
+                "issues": "https://forge.typo3.org",
+                "source": "https://github.com/typo3/typo3"
+            },
+            "time": "2025-03-18T14:13:14+00:00"
+        },
+        {
+            "name": "typo3/cms-lowlevel",
+            "version": "v13.4.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/lowlevel.git",
+                "reference": "f0e4e803b3c43914c622c34024344676ddfcb6af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/lowlevel/zipball/f0e4e803b3c43914c622c34024344676ddfcb6af",
+                "reference": "f0e4e803b3c43914c622c34024344676ddfcb6af",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "13.4.8"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "lowlevel"
+                },
+                "branch-alias": {
+                    "dev-main": "13.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Lowlevel\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "TYPO3 CMS Lowlevel - Technical analysis of the system. This includes raw database search, checking relations, counting pages and records etc.",
             "homepage": "https://typo3.org",
             "support": {
                 "chat": "https://typo3.org/help",

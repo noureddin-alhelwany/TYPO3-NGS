@@ -33,6 +33,10 @@ return [
             'loginLogo' => '',
             'loginLogoAlt' => '',
         ],
+        'container_elements' => [
+            'collapsibleContentElements' => '1',
+            'renderEmptyColumns' => '0',
+        ],
         'extensionmanager' => [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
