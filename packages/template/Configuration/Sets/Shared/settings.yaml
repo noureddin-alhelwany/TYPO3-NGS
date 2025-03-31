@@ -1,4 +1,5 @@
 assetsDir: 'shared'
+navigationLayout: 'Navigation_1'
 styles:
   templates:
     layoutRootPath: 'EXT:template/Resources/Private/ContentElements/Layouts/'

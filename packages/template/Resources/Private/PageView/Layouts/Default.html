@@ -1,29 +1,12 @@
-<html data-namespace-typo3-fluid="true" xmlns:vite="http://typo3.org/ns/Praetorius/ViteAssetCollector/ViewHelpers">
+<html data-namespace-typo3-fluid="true"
+      xmlns:vite="http://typo3.org/ns/Praetorius/ViteAssetCollector/ViewHelpers"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+>
 
 <div id="app">
-    <ul>
-        <f:for each="{mainnavigation}" as="mainnavigationItem">
-            <li class="{f:if(condition: mainnavigationItem.active, then:'active')}">
-                <a href="{mainnavigationItem.link}" target="{mainnavigationItem.target}"
-                    title="{mainnavigationItem.title}">
-                    {mainnavigationItem.title}
-                </a>
-                <f:if condition="{mainnavigationItem.children}">
-                    <ul>
-                        <f:for each="{mainnavigationItem.children}" as="child">
-                            <li class="{f:if(condition: child.active, then:'active')}">
-                                <a href="{child.link}" target="{child.target}" title="{child.title}">
-                                    {child.title}
-                                </a>
-                            </li>
-                        </f:for>
-                    </ul>
-                </f:if>
-            </li>
-        </f:for>
-    </ul>
-    <f:render section="Main" />
+    <f:render partial="Navigation/{settings.navigationLayout}" arguments="{mainnavigation:mainnavigation}"></f:render>
+    <f:render section="Main"/>
 </div>
 
-<vite:asset entry="EXT:template/Resources/Private/assets/{settings.assetsDir}/Styles.entry.css" />
-<vite:asset entry="EXT:template/Resources/Private/assets/{settings.assetsDir}/Main.entry.js" />
+<vite:asset entry="EXT:template/Resources/Private/assets/{settings.assetsDir}/Styles.entry.css"/>
+<vite:asset entry="EXT:template/Resources/Private/assets/{settings.assetsDir}/Main.entry.js"/>
