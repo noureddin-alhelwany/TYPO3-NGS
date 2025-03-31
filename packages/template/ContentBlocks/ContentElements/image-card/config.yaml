@@ -1,6 +1,38 @@
 name: ngs/image-card
+title: Image Card
+description: small image left and text right with button
 fields:
+  - identifier: backgroundcolor
+    label: 'background color'
+    type: Select
+    renderType: selectSingle
+    items:
+      - label: 'Primary'
+        value: primary
+      - label: 'Secondary'
+        value: secondary
+  - identifier: buttonstyle
+    label: 'button style'
+    type: Select
+    renderType: selectSingle
+    items:
+      - label: 'Outlined'
+        value: outlined
+      - label: 'Filled'
+        value: filled
+  - identifier: inverse
+    label: 'Inverse'
+    type: Checkbox
+    items:
+      - label: 'inverse'
   - identifier: header
     useExistingField: true
   - identifier: bodytext
     useExistingField: true
+    enableRichtext: true
+  - identifier: linktext
+    label: link text
+    type: Text
+  - identifier: link
+    label: readmore link
+    type: Link

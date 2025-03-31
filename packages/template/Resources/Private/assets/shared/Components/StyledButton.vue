@@ -23,7 +23,7 @@ else if (props.variant == 'text')
 
 <template>
     <button
-        :class="`rounded-md px-4 py-2 text-sm uppercase tracking-widest transition duration-150 ease-in-out font-extrabold ${colorClasses}`">
+        :class="`w-full rounded-md px-4 py-2 text-sm uppercase tracking-widest transition duration-150 ease-in-out font-extrabold ${colorClasses}`">
         <Loading :loading="loading">
             <slot />
         </Loading>
