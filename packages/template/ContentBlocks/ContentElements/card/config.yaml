@@ -1,0 +1,23 @@
+name: ngs/card
+group: NGS Content Elements
+title: Card
+description: card with optional button
+prefixFields: false
+fields:
+  - identifier: backgroundcolor
+    type: Select
+    renderType: selectSingle
+  - identifier: buttonstyle
+    type: Select
+    renderType: selectSingle
+  - identifier: inverse
+    type: Checkbox
+  - identifier: header
+    useExistingField: true
+  - identifier: bodytext
+    useExistingField: true
+    enableRichtext: true
+  - identifier: linktext
+    type: Text
+  - identifier: link
+    type: Link

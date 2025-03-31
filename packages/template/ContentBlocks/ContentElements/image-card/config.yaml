@@ -1,9 +1,11 @@
 name: ngs/image-card
+group: NGS Content Elements
 title: Image Card
-description: small image left and text right with button
+description: small image left and text right with optional button
+prefixFields: false
 fields:
   - identifier: backgroundcolor
-    label: 'background color'
+    label: 'Background Color'
     type: Select
     renderType: selectSingle
     items:
@@ -12,7 +14,7 @@ fields:
       - label: 'Secondary'
         value: secondary
   - identifier: buttonstyle
-    label: 'button style'
+    label: 'Button Style'
     type: Select
     renderType: selectSingle
     items:
@@ -31,8 +33,9 @@ fields:
     useExistingField: true
     enableRichtext: true
   - identifier: linktext
-    label: link text
+    label: Link text
     type: Text
+    max: 30
   - identifier: link
-    label: readmore link
+    label: Readmore link
     type: Link
