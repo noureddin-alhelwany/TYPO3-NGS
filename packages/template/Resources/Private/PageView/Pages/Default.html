@@ -2,7 +2,7 @@
 
 <f:layout name="Default"/>
 <f:section name="Main">
-
-    <f:render partial="Content" arguments="{records: content.main.records}"/>
-
+    <div class="container{f:if(condition: '{page.pageRecord.layout} == 4', then: '-fluid', else: '')}">
+        <f:render partial="Content" arguments="{records: content.main.records}"/>
+    </div>
 </f:section>

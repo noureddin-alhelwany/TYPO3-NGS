@@ -8,7 +8,14 @@ RTE {
 
 TCEFORM {
     pages {
-
+        layout {
+            removeItems = 0,1,2,3
+            addItems {
+                4 = Full Width
+                5 = With Margin
+            }
+            default = 4
+        }
     }
     tt_content {
 
