@@ -1,71 +1,8 @@
-<f:layout name="Default" />
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+
+<f:layout name="Default"/>
 <f:section name="Main">
 
-    <div class="flex flex-col p-10 gap-10">
-
-        <div class="flex gap-10">
-            <div class="bg-primary p-10 rounded-md">
-                <h1 class="text-on-primary text-2xl font-extrabold"> Hello </h1>
-                <p class="text-on-primary text-lg"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-                    eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-                    est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-                    eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-                    est Lorem ipsum dolor sit amet. </p>
-            </div>
-
-            <div class="bg-secondary p-10 rounded-md">
-                <h1 class="text-on-secondary text-2xl font-extrabold"> Hello </h1>
-                <p class="text-on-secondary text-lg"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-                    eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-                    est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-                    eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-                    est Lorem ipsum dolor sit amet. </p>
-            </div>
-        </div>
-
-        <div class="flex gap-10">
-            <div class="bg-on-primary p-10 rounded-md">
-                <h1 class="text-primary text-2xl font-extrabold"> Hello </h1>
-                <p class="text-primary text-lg"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-                    eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-                    est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-                    eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-                    est Lorem ipsum dolor sit amet. </p>
-            </div>
-
-            <div class="bg-on-secondary p-10 rounded-md">
-                <h1 class="text-secondary text-2xl font-extrabold"> Hello </h1>
-                <p class="text-secondary text-lg"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-                    eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-                    est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
-                    eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-                    est Lorem ipsum dolor sit amet. </p>
-            </div>
-        </div>
-
-        <div class="flex gap-4">
-            <button class="bg-error rounded-md px-8 py-2 text-on-error font-extrabold">
-                Danger Button
-            </button>
-
-            <button class="bg-warning rounded-md px-8 py-2 text-on-warning font-extrabold">
-                Danger Button
-            </button>
-
-            <button class="bg-info rounded-md px-8 py-2 text-on-info font-extrabold">
-                Danger Button
-            </button>
-        </div>
-    </div>
-
-    <f:render partial="Content" arguments="{records: content.main.records}" />
+    <f:render partial="Content" arguments="{records: content.main.records}"/>
 
 </f:section>
