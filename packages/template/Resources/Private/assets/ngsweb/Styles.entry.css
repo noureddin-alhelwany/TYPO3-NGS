@@ -22,5 +22,5 @@
 }
 
 .line {
-  @apply border-primary rounded-lg border-4;
+  @apply rounded-lg border-4;
 }
