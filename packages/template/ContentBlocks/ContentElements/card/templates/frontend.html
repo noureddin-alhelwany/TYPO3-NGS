@@ -1,1 +1,30 @@
 <html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+
+<div
+    class="rounded-lg lg:p-10 p-6 flex gap-6 flex-col shadow-2xl bg-{f:if(condition: data.inverse, then: 'on-')}{data.backgroundcolor} w-fit h-full">
+    <div class="flex lg:gap-12 gap-6 lg:flex-row flex-col justify-between h-full">
+        <div class="flex flex-col justify-between gap-8 mt-2">
+            <div class="flex flex-col gap-3">
+                <h2 class="!m-0 lg:text-3xl text-2xl w-full text-{f:if(condition: '!{data.inverse}', then: 'on-')}{data.backgroundcolor}">
+                    {data.header}
+                </h2>
+                <span
+                    class="line w-12 border-{f:if(condition: '!{data.inverse}', then: 'on-')}{data.backgroundcolor}"></span>
+            </div>
+            <div
+                class="lg:text-lg text-base text-{f:if(condition: '!{data.inverse}', then: 'on-')}{data.backgroundcolor}">
+                <f:format.html>{data.bodytext}</f:format.html>
+            </div>
+
+            <f:link.typolink
+                parameter="{data.link}"
+                class="w-full"
+                title="{data.linktext}"
+            >
+                <styled-button variant="{data.buttonstyle}" color="{data.backgroundcolor}" :inverse="!{data.inverse}">
+                    {data.linktext}
+                </styled-button>
+            </f:link.typolink>
+        </div>
+    </div>
+</div>

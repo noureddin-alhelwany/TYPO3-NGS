@@ -1,16 +1,16 @@
 <html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
 
 <div
-    class="rounded-lg lg:p-10 p-6 flex gap-6 flex-col shadow-2xl bg-{f:if(condition: data.inverse, then: 'on-')}{data.backgroundcolor} w-full h-full">
-    <div class="flex lg:gap-12 gap-6 lg:flex-row flex-col">
+    class="rounded-lg lg:p-10 p-6 flex gap-6 flex-col shadow-2xl bg-{f:if(condition: data.inverse, then: 'on-')}{data.backgroundcolor} h-full">
+    <div class="flex lg:gap-12 gap-6 lg:flex-row flex-col justify-between h-full">
         <img
             src="https://cdn.prod.website-files.com/60ff934f6ded2d17563ab9dd/61392d68372fbf957b87bb8d_starting-a-cleaning-business.jpeg"
             class="lg:w-52 w-full h-48 lg:h-auto object-cover rounded-lg">
-        <div class="flex flex-col lg:max-w-96 justify-between gap-8 mt-2">
+        <div class="flex flex-col justify-between gap-8 mt-2">
             <div class="flex flex-col gap-3">
-                <h1 class="lg:text-3xl text-2xl w-full text-{f:if(condition: '!{data.inverse}', then: 'on-')}{data.backgroundcolor}">
+                <h2 class="!m-0  lg:text-3xl text-2xl w-full text-{f:if(condition: '!{data.inverse}', then: 'on-')}{data.backgroundcolor}">
                     {data.header}
-                </h1>
+                </h2>
                 <span
                     class="line w-12 border-{f:if(condition: '!{data.inverse}', then: 'on-')}{data.backgroundcolor}"></span>
             </div>

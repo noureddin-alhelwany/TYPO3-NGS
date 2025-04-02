@@ -1,0 +1,4 @@
+
+.line {
+  @apply rounded-lg border-4;
+}
