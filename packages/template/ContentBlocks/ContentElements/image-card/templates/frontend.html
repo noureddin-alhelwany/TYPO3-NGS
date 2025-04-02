@@ -3,9 +3,15 @@
 <div
     class="rounded-lg lg:p-10 p-6 flex gap-6 flex-col shadow-2xl bg-{f:if(condition: data.inverse, then: 'on-')}{data.backgroundcolor} h-full">
     <div class="flex lg:gap-12 gap-6 lg:flex-row flex-col justify-between h-full">
-        <img
-            src="https://cdn.prod.website-files.com/60ff934f6ded2d17563ab9dd/61392d68372fbf957b87bb8d_starting-a-cleaning-business.jpeg"
-            class="lg:w-52 w-full h-48 lg:h-auto object-cover rounded-lg">
+       <f:if condition="{data.image.0.publicUrl}">
+           <f:image
+               src="{data.image.0.uid}"
+               treatIdAsReference="1"
+               cropVariant="default"
+               alt="{data.image.0.alternative}"
+               title="{data.image.0.title}"
+               class="lg:w-52 w-full h-48 lg:h-auto object-cover rounded-lg"/>
+       </f:if>
         <div class="flex flex-col justify-between gap-8 mt-2">
             <div class="flex flex-col gap-3">
                 <h2 class="!m-0  lg:text-3xl text-2xl w-full text-{f:if(condition: '!{data.inverse}', then: 'on-')}{data.backgroundcolor}">

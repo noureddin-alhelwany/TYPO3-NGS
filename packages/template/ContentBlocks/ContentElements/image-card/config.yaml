@@ -39,3 +39,5 @@ fields:
   - identifier: link
     label: Readmore link
     type: Link
+  - identifier: image
+    useExistingField: true
